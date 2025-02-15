@@ -1,0 +1,8 @@
+---
+- name: Show project information
+  ansible.builtin.debug:
+    msg:
+      - "🏷️  Project name     : {{ inventory_hostname }}"
+      - "🖥️  Application name : {{ app_name }}"
+      - "🌐 Cluster          : {{ cluster_name }}"
+      - "{{ project_description | default(project_default_description) }}"

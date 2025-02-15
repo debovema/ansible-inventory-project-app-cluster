@@ -1,0 +1,3 @@
+ansible_connection: local # projects are not remote hosts where Ansible can connect to but logical entities
+
+project_default_description: "Project '{{ inventory_hostname }}' in the '{{ app_name }}' application targeting '{{ cluster_name }}' cluster." # default description if not overridden in host_vars

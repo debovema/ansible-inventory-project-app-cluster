@@ -1,0 +1,6 @@
+---
+- name: Example Playbook to target projects
+  hosts:
+  - "{{ target_projects | default('projects') }}" # target all projects by default
+  roles:
+    - role: project_info

@@ -1,0 +1,6 @@
+---
+- name: Example Playbook to target clusters
+  hosts:
+  - "{{ target_clusters | default('clusters') }}" # target all clusters by default
+  roles:
+    - role: project_info

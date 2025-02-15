@@ -1,0 +1,3 @@
+# Common variables for cluster1
+cluster_name: "Cluster 1"
+region: "us-east-1"
